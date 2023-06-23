@@ -1,29 +1,25 @@
-import sys
+# 시간초과를 해결하기 위해 에라토스테네스의 체 알고리즘을 활용하여 소수집합을 구하였다.
 
-def spn(N) :
-    if N<=1 :
-        return False
-    for n in range(2,int(N**0.5)+1) :
-        if N%n==0 :
-            return False
-    return True
 
-T=int(sys.stdin.readline().strip())
-N_list=[int(sys.stdin.readline().strip()) for _ in range(T)]
+def spn(N):
+    S = [True] * (N + 1)
+    for i in range(2, int(N ** (1 / 2)) + 1):
+        if S[i] == True:
+            j = 2
+            while i * j <= N:
+                S[i * j] = False
+                j += 1
+    S[0], S[1] = False, False
+    return S
 
-sosu_list = [i for i in range(2, max(N_list)+1) if spn(i)]
 
-for N in N_list:
-    slice_list=[]
-    for i in range(len(sosu_list)) :
-        if sosu_list[i]>N :
-            slice_list=sosu_list[0:i]
-            break
-        elif i==len(sosu_list)-1 :
-            slice_list=sosu_list.copy()
-    count=0
-    for i in range(len(slice_list)-1) :
-        for j in range(i, len(slice_list)) :
-            if slice_list[i] + slice_list[j] == N :
-                count+=1
-    print(count)
+T = int(input())
+S = spn(1000000)
+for t in range(1, T + 1):
+    N = int(input())
+    result = 0
+
+    for i in range(2, int(N / 2) + 1):
+        if S[i] == True and S[N - i] == True:
+            result += 1
+    print(result)
