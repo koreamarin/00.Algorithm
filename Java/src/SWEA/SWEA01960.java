@@ -37,7 +37,7 @@ public class SWEA01960 {
 			}
 			
 			for (int i=0; i<N; i++) {
-				for (int)
+
 			}
 
 			

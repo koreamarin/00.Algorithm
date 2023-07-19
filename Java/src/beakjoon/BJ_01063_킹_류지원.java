@@ -1,19 +1,20 @@
 package beakjoon;
 
 /**
- * @author ·ùÁö¿ø
- * ¹®Á¦ : SWEA 1063
+ * @author ë¥˜ì§€ì›
+ * ë¬¸ì œ : BEAKJOON 1063 í‚¹
  * 
- * ¾ÆÀÌµð¾î : 
- * ´Ü¼ø ±¸Çö¹®Á¦ÀÌ¹Ç·Î ÀÔ·Â¿¡ µû¶ó Å·ÀÇ À§Ä¡¿Í µ¹ÀÇ À§Ä¡¸¦ ¿òÁ÷ÀÎ´Ù.
- * ¸¸¾à Å·ÀÌ³ª µ¹ÀÇ À§Ä¡°¡ Ã¼½ºÆÇÀÇ À§Ä¡¸¦ ¹þ¾î³­´Ù¸é ±× ÀÌµ¿Àº ¹«½ÃÇÑ´Ù.
+ * í’€ì´ ë°©ì‹ :
+ * ë‹¨ìˆœ êµ¬í˜„ ë¬¸ì œì´ë¯€ë¡œ ì¡°ê±´ì— ë§žì¶° í’€ì–´ë‚˜ê°„ë‹¤.
+ * í‚¹ê³¼ ëŒì„ ì´ë™ì‹œí‚¤ë˜, í‚¹ ë˜ëŠ” ëŒì´ ë§µ ë°–ìœ¼ë¡œ ë‚˜ê°„ë‹¤ë©´
+ * í•´ë‹¹ ì´ë™ì€ ë¬´íš¨ì²˜ë¦¬í•˜ëŠ” ì•Œê³ ë¦¬ì¦˜ì„ êµ¬í˜„í•œë‹¤.
  * 
  */
 
 import java.io.*;
 import java.util.*;
 
-public class BJ_01063_Å·_·ùÁö¿ø {
+public class BJ_01063_í‚¹_ë¥˜ì§€ì› {
 
 
 	public static void main(String[] args) throws IOException {
