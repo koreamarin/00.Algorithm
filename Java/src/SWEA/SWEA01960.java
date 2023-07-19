@@ -1,4 +1,4 @@
-package beakjoon;
+package SWEA;
 /**
  * @author 류지원
  * 
@@ -11,7 +11,7 @@ package beakjoon;
  */
 import java.util.Scanner;
 
-public class SWEA01959 {
+public class SWEA01960 {
 
 	public static void main(String[] args) {
 
