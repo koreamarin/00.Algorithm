@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59ca045-6a76-4baf-93c8-cdcb46fe27fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/beakjoon/BJ_11729_하노이탑이동순서_류지원.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beakjoon/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SWEA/D3_01289_원재의메모리복구하기_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SWEA/D3_01289_원재의메모리복구하기_류지원.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beakjoon/BJ_17478_재귀함수가_뭔가요_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beakjoon/BJ_17478_재귀함수가뭔가요_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +27,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
