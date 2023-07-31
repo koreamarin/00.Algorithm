@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f59ca045-6a76-4baf-93c8-cdcb46fe27fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/beakjoon/BJ_11729_하노이탑이동순서_류지원.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/beakjoon/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SWEA/D3_01289_원재의메모리복구하기_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SWEA/D3_01289_원재의메모리복구하기_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beakjoon/BJ_17478_재귀함수가_뭔가요_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beakjoon/BJ_17478_재귀함수가뭔가요_류지원.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2TKwh5HzemojoyhbBkY3zmETiUe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f59ca045-6a76-4baf-93c8-cdcb46fe27fe" name="Changes" comment="" />
+      <created>1690805198740</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690805198740</updated>
+    </task>
+    <servers />
+  </component>
+</project>
