@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BJ_1244_스위치켜고끄기 {
+public class BJ_1244_스위치켜고끄기_류지원 {
     public static void main(String args[]) throws IOException {
         // 키보드로부터 입력을 받기 위한 BufferedReader 객체 생성
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

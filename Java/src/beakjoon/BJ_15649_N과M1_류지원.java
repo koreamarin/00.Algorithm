@@ -15,8 +15,6 @@ public class BJ_15649_N과M1_류지원 {
         boolean[] arr=new boolean[N];
 
         asdf(M, N, arr);
-
-
     }
     public static void asdf(int M, int N, boolean[] arr) {
         if(M==1) {

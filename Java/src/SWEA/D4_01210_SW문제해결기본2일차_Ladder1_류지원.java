@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class D4_01210_SW문제해결기본2일차_Ladder1 {
+public class D4_01210_SW문제해결기본2일차_Ladder1_류지원 {
     public static void main(String[] args) throws IOException {
         // 키보드로 입력을 받기위한 BufferedReader 객체 생성
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

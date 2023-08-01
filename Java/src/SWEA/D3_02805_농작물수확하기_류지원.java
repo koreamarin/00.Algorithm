@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class D3_02805_농작물수확하기 {
+public class D3_02805_농작물수확하기_류지원 {
     public static void main(String[] args) throws NumberFormatException, IOException {
         // 키보드로 입력을 받기위한 BufferedReader 객체 생성
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
