@@ -23,8 +23,8 @@ public class D3_01208_SW문제해결기본1일차_Flatten_류지원 {
             // 0부터 N까지 sweep 하는 반복문 실행.
             for(int i=0;i<N;i++) {
                 int[] idx=Idx(arr); // idx선언 및 최소값을 가진 원소번호, 최대값을 가진 원소번호를 가진 배열을 반환하는 함수 실행 및 저장.
-                arr[idx[0]]--;      // 최대값에 1 감소
-                arr[idx[1]]++;      // 최소값에 1 증가
+                arr[idx[0]]--;      // idx[0]은 최대값 원소번호, arr[idx[0]]을 1을 뺌.
+                arr[idx[1]]++;      // idx[1]은 최대값 원소번호, arr[idx[1]]을 1을 더함.
             }
             int[] idx=Idx(arr);     // 최대값을 가진 원소번호와 최소값을 가진 원소번호 추출
             int sub = arr[idx[0]]-arr[idx[1]];  // 최대값에서 최소값 빼서 sub에 저장
@@ -37,7 +37,7 @@ public class D3_01208_SW문제해결기본1일차_Flatten_류지원 {
         int MinIdx=0;       // 최소값을 가진 원소번호를 저장할 변수
         int MaxValue=0;     // 최대값을 저장할 변수
         int MinValue=100;   // 최소값을 저장할 변수
-        for(int i=0;i<100;i++) {        // 0~100까지 sweep하는 반복문
+        for(int i=0;i<100;i++) {        // 배열의 끝까지 0~100을 sweep하는 반복문 실행
             if(arr[i]>MaxValue) {       // 만약 배열의 해당 원소값이 MaxValue보다 크다면 실행하는 조건문
                 MaxValue=arr[i];        // Maxvalue에 해당 원소값 저장
                 MaxIdx=i;               // MaxIdx에 해당 원소번호 저장.

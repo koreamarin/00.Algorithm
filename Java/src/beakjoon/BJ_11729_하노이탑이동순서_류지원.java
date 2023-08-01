@@ -1,7 +1,5 @@
 package beakjoon;
 
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.*;
 
 public class BJ_11729_하노이탑이동순서_류지원 {
