@@ -10,6 +10,7 @@ public class BJ_11660_구간합구하기5_류지원 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer ST;
+		StringBuilder SB = new StringBuilder();
 		
 		// 첫번째 라인 처리 : N, M 받기
 		ST=new StringTokenizer(br.readLine());
@@ -41,22 +42,19 @@ public class BJ_11660_구간합구하기5_류지원 {
 			}
 		}
 		
-		// 
-		for(int i=0;i<N; i++) System.out.println(Arrays.toString(AccArr[i]));
-		
 //		// 세번째 인풋 처리 : 테스트케이스 M번 각 처리
 		for(int t=0; t<M; t++) {
-			ST=new StringTokenizer(br.readLine());
-			int fi = Integer.parseInt(ST.nextToken()); int fj = Integer.parseInt(ST.nextToken());
-			int bi = Integer.parseInt(ST.nextToken()); int bj = Integer.parseInt(ST.nextToken());
-			
-			
-			
-			
-			
+			ST = new StringTokenizer(br.readLine());
+
+			int fi = Integer.parseInt(ST.nextToken())-1; int fj = Integer.parseInt(ST.nextToken())-1;
+			int bi = Integer.parseInt(ST.nextToken())-1; int bj = Integer.parseInt(ST.nextToken())-1;
+
+			int rst = AccArr[bi][bj];
+			if (fi > 0) rst = rst - AccArr[fi-1][bj];
+			if (fj > 0) rst = rst - AccArr[bi][fj-1];
+			if (fi > 0 && fj > 0) rst = rst + AccArr[fi-1][fj-1];
+			SB.append(rst + "\n");
 		}
-		
-		
-		
+		System.out.print(SB);
 	}
 }
