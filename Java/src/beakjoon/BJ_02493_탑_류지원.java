@@ -22,30 +22,22 @@ public class BJ_02493_탑_류지원 {
 		ArrayList<Integer> list = new ArrayList<>();
 		for(int i=0; i<N; i++) list.add(Integer.parseInt(ST.nextToken()));
 		// 필요 변수 선언
-		Deque<Integer> deq = new ArrayDeque<>();
+		ArrayList<Integer> Arr = new ArrayList<>();
 		// 구현 시작
 		// 덱에 첫번째 값 넣기.
-		
-//		
-		
-		for(int i=N-1; i>=0; i--) {
-			System.out.println(list.get(i));
-			deq.addFirst(list.get(i));
-			
-			for(int A : deq) {
-				System.out.println(A);
-			}
-			
-		}
-		
-		
-		
-		
-		
-		System.out.println(SB);
-		
-		
+		Arr.add(list.get(N-1));
 
+		for(int i=N-2; i>=0; i--) {
+			System.out.println("현재 탑색 탑 : " + list.get(i));
+			for(int A : Arr) {
+				if (list.get(i)>A) {
+					System.out.println(i);
+					list.remove(i);
+				}
+			}
+			Arr.add(list.get(i));
+		}
+		System.out.println(SB);
 	}
 
 }
