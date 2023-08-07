@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class BJ_01158_요세푸스문제 {
+public class BJ_01158_요세푸스문제_류지원 {
 
 	public static void main(String[] args) throws IOException {
 		// 키보드로부터 입력을 받기 위한 BufferedReader 객체 생성
