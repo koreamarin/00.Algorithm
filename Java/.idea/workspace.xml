@@ -5,19 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24f4b1f7-619d-47b0-b840-43a8f4dd65d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/beakjoon/BJ_01158_요세푸스문제_류지원.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beakjoon/BJ_01158_요세푸스문제.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/beakjoon/BJ_02493_탑_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beakjoon/BJ_02493_탑_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2TemKpln4R4fcJR7Irdpovr0mJq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

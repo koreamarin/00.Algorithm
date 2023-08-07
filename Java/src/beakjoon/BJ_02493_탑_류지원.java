@@ -33,7 +33,7 @@ public class BJ_02493_탑_류지원 {
 			deq.addFirst(list.get(i));
 			
 			for(int A : deq) {
-				System.out.println(A)
+				System.out.println(A);
 			}
 			
 		}
