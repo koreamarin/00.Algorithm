@@ -5,6 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * @author 류지원
+ * 메모리 : 30240kb
+ * 실행시간 : 287ms
+ * 풀이방법 :
+ * DFS를 쓰려고 했는데, 각 노드에 딸린 노드가 한개뿐이라서 DFS라고 해도 되는지 모르겠다..
+ * 아무튼 재귀를 써서 Depth를 추출했다.
+ */
+
 public class D4_01861_정사각형방 {
 	
 	static int[][] arr;
