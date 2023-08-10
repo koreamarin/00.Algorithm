@@ -35,7 +35,7 @@ public class BJ_15649_N과M1_류지원 {
     		if(isSelected[i]==false) {		// isSelected[i]가 false라면 i는 이전에 사용하지 않은 정수이므로 구현부 실행
     			numbers[cnt]=i;			// numbers[cnt]에 i를 입력
     			isSelected[i]=true;		// isSelected[i]에 true 입력하여 사용하는  번호임을 표시
-				NM(cnt+1);			// cnt에 1을 추가하여 NM을 호출함으로서 다음 자리수를 찾는 재귀 시작
+				NM(cnt+1);				// cnt에 1을 추가하여 NM을 호출함으로서 다음 자리수를 찾는 재귀 시작
     			isSelected[i]=false;	// 현재 자리수에 대한 모든 번호을 찾았다면 다음 번호로 넘어가기 위해 현재 자리수는 사용하지 않는 다는 뜻으로
 										// false를 입력
     		}
