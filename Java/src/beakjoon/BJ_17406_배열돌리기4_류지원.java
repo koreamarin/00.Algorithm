@@ -1,12 +1,10 @@
 package beakjoon;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
-
 /**
  * @author 류지원
  * 메모리 : 72668KB
@@ -16,7 +14,6 @@ import java.util.StringTokenizer;
  * 순서를 섞기 위해서 순열을 사용하여 순서를 섞었으며,
  * 배열을 회전시킬때는 단순구현도 가능하지만 재귀를 사용해서 배열을 회전시켜보았다.
  */
-
 public class BJ_17406_배열돌리기4_류지원 {
     static int[][] arr; static int[][] copyArr; static int[][] partArr;
     static int N; static int M; static int K;
@@ -55,8 +52,7 @@ public class BJ_17406_배열돌리기4_류지원 {
         for(int min:minList) if(minValue>min) minValue=min;
         System.out.print(minValue);
     }
-    // partArr 생성/할당, 회전 지시, copyarr의 해당 부위를 partArr에 붙여넣기
-    public static void CRotation(int r, int c, int s) {
+    public static void CRotation(int r, int c, int s) {		// partArr 생성/할당, 회전 지시, copyarr의 해당 부위를 partArr에 붙여넣기
         int T=r-s-1; int L=c-s-1; int B=r+s-1; int R=c+s-1;
         partArr=new int[B-T+1][R-L+1];
         for(int i=T; i<B+1; i++) partArr[i-T]=Arrays.copyOfRange(copyArr[i], L, R+1);
@@ -65,8 +61,7 @@ public class BJ_17406_배열돌리기4_류지원 {
         Rotation(G, 0);	// 회전 1회 해주는 함수를 돌려야하는 횟수만큼 재실행
         for(int i=0; i<B-T+1; i++) for(int j=0; j<R-L+1; j++) copyArr[T+i][L+j]=partArr[i][j];
     }
-    // arr는 회전할 배열, G는 껍질 넘버. cnt는 회전할 최외각 껍질에서 안쪽으로 세는 껍질 넘버(?)
-    public static void Rotation(int G, int cnt) {
+    public static void Rotation(int G, int cnt) {	// arr는 회전할 배열, G는 껍질 넘버. cnt는 회전할 최외각 껍질에서 안쪽으로 세는 껍질 넘버(?)
         if(cnt==G) return; 			// 기저 조건
         int save = partArr[cnt][cnt];	// arr[cnt][cnt]는 덮어씌워져 사라질수 있으므로 따로 빼놓음.
         for(int i=cnt; i<PN-cnt-1; i++) partArr[i][cnt]=partArr[i+1][cnt];              // 서쪽 껍질 회전
