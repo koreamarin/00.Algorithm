@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef556c9-c650-49ca-b3b8-715387d38101" name="Changes" comment="">
+    <list default="true" id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_17406_배열돌리기4_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_17406_배열돌리기4_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_01074_Z_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_01074_Z_류지원.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,28 +27,25 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2TnJupxUZHaRQbLxJznyfeVvt72" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2U1FnCxGzMlqV3G3C7YjWFp49jh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eef556c9-c650-49ca-b3b8-715387d38101" name="Changes" comment="" />
-      <created>1691673138089</created>
+      <changelist id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="" />
+      <created>1692099345602</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691673138089</updated>
+      <updated>1692099345602</updated>
     </task>
     <servers />
   </component>

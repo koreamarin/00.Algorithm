@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BJ_01074_Z_류지원 {
-	static int count=0;
+	static int count=0; static int i=0; static int j=0;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer ST = new StringTokenizer(br.readLine());
@@ -16,7 +16,7 @@ public class BJ_01074_Z_류지원 {
         int c = Integer.parseInt(ST.nextToken());
         int S = (int)Math.pow(2, N);
         int[][] arr=new int[S][S];
-        int n = counter(S);
+        counter(S, 0);
         for(int i=0; i<S; i++) System.out.println(Arrays.toString(arr[i]));
     }
 
@@ -38,8 +38,22 @@ public class BJ_01074_Z_류지원 {
 //        return arr;
 //    }
     
-    public static int counter(int S) {
-    	if(S==1) return count++;
-    }
+    public static void counter(int S, int num) {
+    	if(S==1) return;
 
+        if(num==1){
+            j+=1; i-=S/2;
+        } else if(num==2) {
+            j+=1;
+        } else if(num==3) {
+            i+=1; j-=S;
+        } else if(num==4) {
+            i+=1;
+        }
+
+        counter(S/2,1);
+        counter(S/2,2);
+        counter(S/2,3);
+        counter(S/2,4);
+    }
 }
