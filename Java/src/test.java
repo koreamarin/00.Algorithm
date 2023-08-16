@@ -8,9 +8,7 @@ import java.util.StringTokenizer;
 public class test {
     public static void main(String[] args) throws IOException {
     	
-		PriorityQueue<Integer> priorityQueueLowest = new PriorityQueue<>();
-		Integer i = priorityQueueLowest.poll();
-		System.out.println(i);
+		System.out.println((int)('1'-48));
 
     }
 }
