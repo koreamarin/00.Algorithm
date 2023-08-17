@@ -23,21 +23,25 @@ public class BJ_02615_오목_류지원 {
             for(int j=0;j<19;j++) {
                 int arrValue = arr[i][j];
                 if(arrValue==1 || arrValue==2) {
-                    if (OverallVerification(i, j, arr)>0) System.out.println(arrValue+"\t"+i+" "+j);
+                    if (OverallVerification(i, j, arr)) System.out.println(arrValue+"\n"+i+" "+j);
                 }
             }
         }
-
     }
-    public static int OverallVerification(int i,int j, int[][] arr){
-        if (R_Verification(i, j, arr)) return 1;
-        else if (B_Verification(i, j, arr)) return 2;
-        else if (RB_Verification(i, j, arr)) return 3;
-        else if (RT_Verification(i, j, arr)) return 4;
-        return 0;
+
+    public static boolean OverallVerification(int i,int j, int[][] arr){
+        if (R_Verification(i, j, arr)) return true;
+        else if (B_Verification(i, j, arr)) return true;
+        else if (RB_Verification(i, j, arr)) return true;
+        else if (RT_Verification(i, j, arr)) return true;
+        return false;
     }
     public static boolean R_Verification(int i,int j, int[][] arr) {
-
+        int A=arr[i][j];
+        if(arr[i][j+1]==A && arr[i][j+2]==A && arr[i][j+3]==A && arr[i][j+4]==A) {
+            if(arr[i][j+5]==A) return false;
+            return true;
+        }
         return false;
     }
     public static boolean B_Verification(int i,int j, int[][] arr) {
