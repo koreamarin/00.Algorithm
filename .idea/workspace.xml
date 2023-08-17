@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_01074_Z_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_01074_Z_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_02615_오목_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_02615_오목_류지원.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2U1FnCxGzMlqV3G3C7YjWFp49jh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
