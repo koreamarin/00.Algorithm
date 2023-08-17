@@ -15,8 +15,6 @@ public class BJ_02615_오목_류지원 {
             ST=new StringTokenizer(br.readLine());
             for(int j=0;j<19;j++) arr[i][j]=Integer.parseInt(ST.nextToken());
         }
-        // 입력받은 배열 출력
-        for(int i=0;i<19;i++) System.out.println(Arrays.toString(arr[i]));
 
         // 바둑판을 sweep하며 검은돌, 흰돌을 찾음
         for(int i=0;i<19;i++) {
