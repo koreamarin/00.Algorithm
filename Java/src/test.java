@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class test {
     public static void main(String[] args) throws IOException {
     	
-		System.out.println((int)('1'-48));
+		System.out.println((int)('A'-64));
 
     }
 }
