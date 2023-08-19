@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+/**
+ * @author 류지원
+ * 풀이방법 : 단순구현으로 풀이하였다.
+ */
 public class BJ_02615_오목_류지원 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
