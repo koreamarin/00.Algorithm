@@ -13,7 +13,7 @@ package SWEA;
 
 import java.util.Scanner;
 
-public class SWEA01204 {
+public class SW_01204_최빈수구하기_류지원 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -11,7 +11,7 @@ package SWEA;
  */
 import java.util.Scanner;
 
-public class SWEA01960 {
+public class SW_01959_두개의숫자열_류지원 {
 
 	public static void main(String[] args) {
 

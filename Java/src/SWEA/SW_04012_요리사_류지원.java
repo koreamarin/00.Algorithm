@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class SW_04012_요리사 {
+public class SW_04012_요리사_류지원 {
 	static int N;
 	static boolean[] isSelected;
 	static int[] numbers=new int[4];
