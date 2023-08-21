@@ -39,7 +39,20 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_17144_미세먼지안녕_류지원">
+  <component name="RunManager" selected="Application.BJ_02252_줄세우기_류지원">
+    <configuration name="BJ_02252_줄세우기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02252_줄세우기_류지원" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beakjoon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BJ_17144_미세먼지안녕_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_17144_미세먼지안녕_류지원" />
       <module name="Java" />
@@ -68,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_02252_줄세우기_류지원" />
         <item itemvalue="Application.BJ_17144_미세먼지안녕_류지원" />
         <item itemvalue="Application.SW_04013_특이한자석_류지원" />
       </list>
