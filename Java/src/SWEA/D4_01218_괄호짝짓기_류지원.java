@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class D4_SW문제해결기본4일차_괄호짝짓기_류지원 {
+public class D4_01218_괄호짝짓기_류지원 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		for(int t=1; t<11; t++) {
@@ -17,7 +17,8 @@ public class D4_SW문제해결기본4일차_괄호짝짓기_류지원 {
 			deq.addFirst(G.charAt(0));
 			if (N%2==1) {
 				System.out.println("#"+t+" "+0);
-			} else {
+			}
+			else {
 				for(int n=1;n<N;n++) {
 					if(deq.peekFirst()=='{' && G.charAt(n)=='}') {
 						deq.removeFirst();
@@ -34,8 +35,6 @@ public class D4_SW문제해결기본4일차_괄호짝짓기_류지원 {
 				System.out.println("#"+t+" "+1);
 			}
 		}
-		
-		
 	}
 
 }
