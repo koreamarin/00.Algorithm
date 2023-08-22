@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_15683_감시_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_15683_감시_류지원.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,35 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_02252_줄세우기_류지원">
+  <component name="RunManager" selected="Application.BJ_01759_암호만들기_류지원">
+    <configuration name="BJ_01759_암호만들기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01759_암호만들기_류지원" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beakjoon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BJ_02252_줄세우기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02252_줄세우기_류지원" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beakjoon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJ_15683_감시_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_15683_감시_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -81,6 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_01759_암호만들기_류지원" />
+        <item itemvalue="Application.BJ_15683_감시_류지원" />
         <item itemvalue="Application.BJ_02252_줄세우기_류지원" />
         <item itemvalue="Application.BJ_17144_미세먼지안녕_류지원" />
         <item itemvalue="Application.SW_04013_특이한자석_류지원" />
