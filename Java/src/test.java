@@ -7,8 +7,9 @@ import java.util.StringTokenizer;
 
 public class test {
     public static void main(String[] args) throws IOException {
-    	
-		System.out.println((int)('A'-64));
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer ST=new StringTokenizer(br.readLine());
+		System.out.println(ST.countTokens());
 
     }
 }
