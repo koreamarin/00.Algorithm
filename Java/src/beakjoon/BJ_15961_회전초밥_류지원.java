@@ -10,7 +10,8 @@ import java.util.StringTokenizer;
  * 메모리 :
  * 시간 :
  * 풀이 방식 :
- *
+ * 배열 슬라이딩 방식을 이용하여 한칸씩 이동하며 초밥의 개수를 카운팅하였다.
+ * 하지만 99%에서 실패하였고, 아직 이유를 찾지 못하였다.
  *
  */
 public class BJ_15961_회전초밥_류지원 {
@@ -26,24 +27,23 @@ public class BJ_15961_회전초밥_류지원 {
 
         int[] belt=new int[N];
         for(int n=0;n<N; n++) belt[n]=Integer.parseInt(br.readLine());
-        int[] visited = new int[d+1];
-        int ans=0;
-        int total=0;
+        int cnt = 0;
+        int[] visit = new int[d + 1];
         for (int i = 0; i < k; i++) {
-            if(visited[belt[i]] ==0) total++;
-            visited[belt[i]]++;
+            if (visit[belt[i]]== 0) cnt++;
+            visit[belt[i]]++;
         }
-        ans = total;
+        int check = cnt;
         for (int i = 1; i < N; i++) {
-            if(ans<=total) {
-                if(visited[c]==0) ans = total+1;
-                else ans = total;
+            if (check <= cnt) {
+                check = cnt;
+                if (visit[c] == 0) check++;
             }
-            visited[belt[i-1]]--;
-            if(visited[belt[i-1]]==0)total--;
-            if(visited[belt[(i+k-1)%N]]==0)total++;
-            visited[belt[(i+k-1)%N]]++;
+            visit[belt[i - 1]]--;
+            if (visit[belt[i-1]] == 0) cnt--;
+            if (visit[belt[(i+k-1)%N]]==0) cnt++;
+            visit[belt[(i+k-1) % N]]++;
         }
-        System.out.print(ans);
+        System.out.print(check);
     }
 }
