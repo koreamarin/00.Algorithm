@@ -27,21 +27,21 @@ public class BJ_15961_회전초밥_류지원 {
 
         int[] belt=new int[N];
         for(int n=0;n<N; n++) belt[n]=Integer.parseInt(br.readLine());
-        int cnt = 0;
+        int count = 0;
         int[] visit = new int[d + 1];
         for (int i = 0; i < k; i++) {
-            if (visit[belt[i]]== 0) cnt++;
+            if (visit[belt[i]]== 0) count++;
             visit[belt[i]]++;
         }
-        int check = cnt;
+        int check = count;
         for (int i = 1; i < N; i++) {
-            if (check <= cnt) {
-                check = cnt;
+            if (check <= count) {
+                check = count;
                 if (visit[c] == 0) check++;
             }
             visit[belt[i - 1]]--;
-            if (visit[belt[i-1]] == 0) cnt--;
-            if (visit[belt[(i+k-1)%N]]==0) cnt++;
+            if (visit[belt[i-1]] == 0) count--;
+            if (visit[belt[(i+k-1)%N]]==0) count++;
             visit[belt[(i+k-1) % N]]++;
         }
         System.out.print(check);
