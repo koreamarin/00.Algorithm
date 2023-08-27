@@ -39,9 +39,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_16236_아기상어_류지원">
-    <configuration name="BJ_01759_암호만들기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01759_암호만들기_류지원" />
+  <component name="RunManager" selected="Application.BJ_03025_돌던지기_류지원">
+    <configuration name="BJ_02023_신기한소수_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02023_신기한소수_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -53,8 +53,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_02023_신기한소수_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02023_신기한소수_류지원" />
+    <configuration name="BJ_03025_돌던지기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_03025_돌던지기_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_03025_돌던지기_류지원" />
         <item itemvalue="Application.BJ_16236_아기상어_류지원" />
         <item itemvalue="Application.BJ_17143_낚시왕_류지원" />
         <item itemvalue="Application.BJ_15961_회전초밥_류지원" />
         <item itemvalue="Application.BJ_02023_신기한소수_류지원" />
-        <item itemvalue="Application.BJ_01759_암호만들기_류지원" />
       </list>
     </recent_temporary>
   </component>
