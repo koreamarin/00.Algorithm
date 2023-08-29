@@ -22,7 +22,7 @@ public class BJ_02146_다리만들기_류지원 {
         for(int i=0; i<N; i++) {
             ST=new StringTokenizer(br.readLine());
             for(int j=0; j<N; j++) {
-                map[i][j]=
+//                map[i][j]=
             }
         }
 
