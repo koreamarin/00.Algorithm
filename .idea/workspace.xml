@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/beakjoon/BJ_02146_다리만들기_류지원.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_02146_다리만들기_류지원.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +40,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_03025_돌던지기_류지원">
-    <configuration name="BJ_02023_신기한소수_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02023_신기한소수_류지원" />
+  <component name="RunManager" selected="Application.BJ_01149_RGB거리_류지원">
+    <configuration name="BJ_01149_RGB거리_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01149_RGB거리_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -107,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_01149_RGB거리_류지원" />
         <item itemvalue="Application.BJ_03025_돌던지기_류지원" />
         <item itemvalue="Application.BJ_16236_아기상어_류지원" />
         <item itemvalue="Application.BJ_17143_낚시왕_류지원" />
         <item itemvalue="Application.BJ_15961_회전초밥_류지원" />
-        <item itemvalue="Application.BJ_02023_신기한소수_류지원" />
       </list>
     </recent_temporary>
   </component>
