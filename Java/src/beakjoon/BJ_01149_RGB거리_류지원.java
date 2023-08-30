@@ -29,12 +29,12 @@ public class BJ_01149_RGB거리_류지원 {
 	}
 	
 	public static long DP(int n) {
-		if(DP(n-1)+1%3)
+//		if(DP(n-1)+1%3)
 		dp[n]=(int) ((DP(n-1)+1)%3);
 		
 		
 		
-		dp[n]=(DP(n-1)+2)%3;
+//		dp[n]=(DP(n-1)+2)%3;
 		
 		return dp[n];
 	}
