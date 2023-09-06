@@ -39,9 +39,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_14567_선수과목_류지원">
-    <configuration name="BJ_01149_RGB거리_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01149_RGB거리_류지원" />
+  <component name="RunManager" selected="Application.BJ_01922_네트워크연결_류지원">
+    <configuration name="BJ_01717_집합의표현_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01717_집합의표현_류지원" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="beakjoon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJ_01922_네트워크연결_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01922_네트워크연결_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -55,19 +68,6 @@
     </configuration>
     <configuration name="BJ_02252_줄세우기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02252_줄세우기_류지원" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_03025_돌던지기_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_03025_돌던지기_류지원" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_01922_네트워크연결_류지원" />
+        <item itemvalue="Application.BJ_01717_집합의표현_류지원" />
         <item itemvalue="Application.BJ_14567_선수과목_류지원" />
         <item itemvalue="Application.BJ_02252_줄세우기_류지원" />
         <item itemvalue="Application.BJ_10971_외판원순회2_류지원" />
-        <item itemvalue="Application.BJ_01149_RGB거리_류지원" />
-        <item itemvalue="Application.BJ_03025_돌던지기_류지원" />
       </list>
     </recent_temporary>
   </component>
