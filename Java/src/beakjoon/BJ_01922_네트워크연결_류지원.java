@@ -3,7 +3,6 @@ package beakjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -77,23 +76,4 @@ public class BJ_01922_네트워크연결_류지원 {
         }
         System.out.println(result);
     }
-=======
-import java.util.StringTokenizer;
-
-public class BJ_01922_네트워크연결_류지원 {
-	
-
-	public static void main(String[] args) throws IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer ST;
-		int N = Integer.parseInt(br.readLine());
-		int M = Integer.parseInt(br.readLine());
-		for(int i=0; i<M; i++) {
-			ST=new StringTokenizer(br.readLine());
-			
-		}
-
-	}
-
->>>>>>> 643aa6dec3aaad9ccb3e6ee6c16d35485fa0692a
 }
