@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="">
+    <list default="true" id="27559ff6-4e85-4e0b-a013-72898da833af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java/src/beakjoon/BJ_01941_소문난칠공주_류지원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,104 +27,25 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2U1FnCxGzMlqV3G3C7YjWFp49jh" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2VL9Ql2ZnWfeuU9TBDCR0PNJJGT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Coding_folder/09.Coding_test"
   }
-}</component>
-  <component name="RunManager" selected="Application.BJ_01780_종이의개수_류지원">
-    <configuration name="BJ_01717_집합의표현_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01717_집합의표현_류지원" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_01780_종이의개수_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01780_종이의개수_류지원" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_01922_네트워크연결_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_01922_네트워크연결_류지원" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_02805_나무자르기_류지원_미완성" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_02805_나무자르기_류지원_미완성" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_14567_선수과목_류지원" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="beakjoon.BJ_14567_선수과목_류지원" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="beakjoon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BJ_01780_종이의개수_류지원" />
-        <item itemvalue="Application.BJ_02805_나무자르기_류지원_미완성" />
-        <item itemvalue="Application.BJ_01922_네트워크연결_류지원" />
-        <item itemvalue="Application.BJ_01717_집합의표현_류지원" />
-        <item itemvalue="Application.BJ_14567_선수과목_류지원" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0a5581a5-093b-4616-9c01-ce8de3718dd9" name="Changes" comment="" />
-      <created>1692099345602</created>
+      <changelist id="27559ff6-4e85-4e0b-a013-72898da833af" name="Changes" comment="" />
+      <created>1694604480969</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1692099345602</updated>
+      <updated>1694604480969</updated>
     </task>
     <servers />
   </component>
