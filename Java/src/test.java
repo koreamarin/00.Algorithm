@@ -7,9 +7,7 @@ import java.util.StringTokenizer;
 
 public class test {
     public static void main(String[] args) throws IOException {
-		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer ST=new StringTokenizer(br.readLine());
-		System.out.println(ST.countTokens());
+		System.out.println(Math.sqrt(Math.pow(3,2)));
 
     }
 }

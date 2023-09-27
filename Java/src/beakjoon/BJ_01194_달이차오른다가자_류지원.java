@@ -13,7 +13,7 @@ public class BJ_01194_달이차오른다가자_류지원 {
 		
 		int N=Integer.parseInt(ST.nextToken()), M=Integer.parseInt(ST.nextToken());
 		
-
+		
 	}
 
 }
