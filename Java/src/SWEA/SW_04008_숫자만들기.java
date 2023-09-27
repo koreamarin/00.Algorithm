@@ -1,9 +1,9 @@
-package a0925.add;
+package SWEA;
 
 import java.io.*;
 import java.util.*;
 
-public class Solution_d9_4008_숫자만들기 {
+public class SW_04008_숫자만들기 {
 	static int N,a[],min,max;
 	
 	static void subs(int cnt,int sum,int add,int sub,int mul,int div){

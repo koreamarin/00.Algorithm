@@ -1,9 +1,9 @@
-package a0925.add;
+package SWEA;
 
 import java.io.*;
 import java.util.*;
 
-public class Solution_d4_1486_장훈이의높은선반{
+public class D4_01486_장훈이의높은선반{
 	static int N,B,min,H[];
 	
 	static void subs(int cnt,int sum){
