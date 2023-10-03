@@ -11,8 +11,8 @@ import java.util.StringTokenizer;
 /**
  * 
  * @author 류지원
- * 시간 : 
- * 메모리 : 
+ * 시간 : 104ms
+ * 메모리 : 12464KB
  * 
  * 풀이방법 : 
  * 1. bfs 사용방법
@@ -60,10 +60,10 @@ public class BJ_09205_맥주마시면서걸어가기 {
 			
 			for(int i=0; i<N+2; i++) {
 				if(isVisited[i]==false) {
-					int x=current[0]-Lct[i][0];
-					int y=current[1]-Lct[i][1];
+					int x=Math.abs(current[0]-Lct[i][0]);
+					int y=Math.abs(current[1]-Lct[i][1]);
 					
-					double distance= Math.sqrt(Math.pow(x,2)+Math.pow(y, 2));
+					double distance= x+y;
 					
 					if(distance<=1000) {
 						queue.offer(Lct[i]);

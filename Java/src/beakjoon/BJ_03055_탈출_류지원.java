@@ -19,19 +19,22 @@ public class BJ_03055_탈출_류지원 {
 		 char[][] map = new char[R][];
 		 for(int r=0; r<R; r++) map[r]=br.readLine().toCharArray();
 		 
+		 // 비버의 굴 저장할 Integer 변수 배열
 		 int[] targetLo;
 		 
-		 Queue<int[]> dochi = new ArrayDeque<>();
-		 Queue<int[]> water = new ArrayDeque<>();
+		 Queue<int[]> dochi = new ArrayDeque<>();	// 고슴도치의 BFS를 위한 큐
+		 Queue<int[]> water = new ArrayDeque<>();	// 물의 BFS를 위한 큐
 		 
 		 for(int r=0; r<R; r++) {
 			 for(int c=0; c<C; c++) {
-				 if(map[r][c]=='D') targetLo=new int[] {r,c};
-				 else if(map[r][c]=='*') water.add(new int[] {r,c});
-				 else if(map[r][c]=='S') dochi.add(new int[] {r,c});
+				 if(map[r][c]=='D') targetLo=new int[] {r,c};			// 비버의 굴 위치 변수에 비버굴 위치 저장
+				 else if(map[r][c]=='*') water.add(new int[] {r,c});	// 물 위치를 담을 큐에 물 위치를 넣음
+				 else if(map[r][c]=='S') dochi.add(new int[] {r,c});	// 초기 고슴도치 위치를 고슴도치 큐에 넣음
 			 }
 		 }
 		 
+		 
+		 // 
 		 while(!water.isEmpty() || !dochi.isEmpty()) {
 			 water.poll();
 			 // 물 증가
