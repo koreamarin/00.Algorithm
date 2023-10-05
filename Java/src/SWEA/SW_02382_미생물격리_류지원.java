@@ -34,9 +34,7 @@ public class SW_02382_미생물격리_류지원 {
 				
 			}
 			
-			
 			Show(cellInfoList, N ,K);
-			
 			
 			for(int m=0; m<M; m++) {
 				// 모든 미생물 이동 
