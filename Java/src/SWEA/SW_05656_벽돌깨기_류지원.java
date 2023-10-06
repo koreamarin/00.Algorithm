@@ -9,11 +9,17 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-// 1. 큐에 넣어서 isDistroy를 true로 만든다
-// 2. 큐에서 빼고 주변 상하좌우에 해당하는 벽돌들을 큐에 넣고 isdistroy를 true로 만든다. 이미 true인 것들은 넣지않는다.
-// 3. isDistroy인 것들은 값을 0으로 만든다.
-// 4. 아래로 착착 다시 쌓는다.
-// 5. 이것들을 중복순열로 쏜다.
+/**
+ * 
+ * @author 류지원
+ * 메모리 : 109568KB
+ * 시간 : 1329ms
+ * 풀이방법
+ * 1. 큐에 넣어서 벽돌 파괴한다.
+ * 2. 파괴된 벽돌은 0으로 만든다.
+ * 4. 아래로 착착 다시 쌓는다.
+ * 5. 이것들을 중복순열로 공을 쏜다.
+ */
 
 public class SW_05656_벽돌깨기_류지원 {
 	static int N, W, H, min;
@@ -42,35 +48,9 @@ public class SW_05656_벽돌깨기_류지원 {
 				}
 			}
 			
+			dfs(0);
 			
-//			dfs(0);
-			
-			
-			
-			int[][] mapClone = new int[H][];
-			for(int i=0; i<H; i++) mapClone[i]=Arrays.copyOf(map[i], W);
-			
-			mapClone = destroy(mapClone, 2);
-			for(int i=0; i<W; i++) System.out.println(Arrays.toString(mapClone[i]));
-			System.out.println();
-			mapClone = destroy(mapClone, 2);
-			for(int i=0; i<W; i++) System.out.println(Arrays.toString(mapClone[i]));
-			System.out.println();
-			mapClone = destroy(mapClone, 6);
-			for(int i=0; i<W; i++) System.out.println(Arrays.toString(mapClone[i]));
-			System.out.println();
-			
-			int sum=0;
-			for(int i=0; i<W; i++) {
-				for(int j=0; j<H; j++) {
-					sum+=mapClone[i][j];
-				}
-			}
-			min=Math.min(min, sum);
-			
-			System.out.println(min);
-			
-			
+			System.out.println("#" + t + " " + min);
 		}
 
 	}
@@ -84,13 +64,11 @@ public class SW_05656_벽돌깨기_류지원 {
 			for(int i=0; i<numbers.length; i++) {
 				mapClone = destroy(mapClone, numbers[i]);
 			}
-//			System.out.println(Arrays.toString(numbers));
-//			for(int i=0; i<W; i++) System.out.println(Arrays.toString(mapClone[i]));
-//			System.out.println();
+
 			int sum=0;
-			for(int i=0; i<W; i++) {
-				for(int j=0; j<H; j++) {
-					sum+=mapClone[i][j];
+			for(int i=0; i<H; i++) {
+				for(int j=0; j<W; j++) {
+					if(mapClone[i][j]>0) sum++;
 				}
 			}
 			min=Math.min(min, sum);
@@ -142,13 +120,13 @@ public class SW_05656_벽돌깨기_류지원 {
 				 
 				 // 우 파괴, 큐에 넣기
 				 for(int i=1; i<num; i++) {
-					 if(crt[1]+i < H && mapClone[crt[0]][crt[1]+i]!=0) {
+					 if(crt[1]+i < W && mapClone[crt[0]][crt[1]+i]!=0) {
 						 queue.add(new int[] {crt[0], crt[1]+i});
 					 }
 				 }
 			 }
-			 mapClone = brickDrop(mapClone);
 		 }
+		 mapClone = brickDrop(mapClone);
 		 
 		 return mapClone;
 	 }
