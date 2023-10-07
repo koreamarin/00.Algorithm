@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-
+/**
+ * 부분집합 기본 구조
+ * 선택됐는지 아닌지를 체킹하기 위햔 boolean[] isSelected를 사용해야함.
+ */
 public class Subset {
 	static int N;
 	static boolean[] isSelected;

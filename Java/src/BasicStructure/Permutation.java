@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * 순열 기본 구조
+ * 중복순열이 아니라면 뽑힌숫자를 다시 뽑지않기위해 boolean[] isSelected를 사용해야함.
+ * 뽑힌 숫자를 저장할 int[] numbers를 사용해야함.
+ */
+
 public class Permutation {
 	static int N, R;
 	static int[] numbers;

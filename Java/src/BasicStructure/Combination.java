@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * 조합 기본 구조
+ * 뽑힌 숫자를 저장할 numbers[]를 사용해야함.
+ */
+
 public class Combination {
 	static int N, R;
 	static int[] numbers;
