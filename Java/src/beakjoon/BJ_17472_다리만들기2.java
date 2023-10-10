@@ -22,6 +22,8 @@ import java.util.StringTokenizer;
  * 2. 해변 위치 List 만들기
  * 3. 해변위치에서 바다 방향으로 일직선으로 뻗어서 섬을 만나면 적용시키기. (2칸 이상일 때에만)
  * 4. 각 다리들을 부분집합으로 적용했을때와 아닐때를 만들어서 다리를 적용시켰을 때 BFS를 돌려 모든 육지를 방문하는 지 확인하기.
+ * 
+ * ## 미완성......
  *
  */
 
@@ -211,15 +213,15 @@ public class BJ_17472_다리만들기2 {
 						}
 						else if(mapClone[crt[0]+dn[d]][crt[1]+dm[d]]==1 || mapClone[crt[0]+dn[d]][crt[1]+dm[d]]==2) {
 							for(int i=1; true; i++) {
-								System.out.println(i + " " + (crt[0]+(dn[d]*i)) + " " + (crt[1]+(dm[d]*i)));
+//								System.out.println(i + " " + (crt[0]+(dn[d]*i)) + " " + (crt[1]+(dm[d]*i)));
 								if(!inRange(crt[0]+(dn[d]*i), crt[1]+(dm[d]*i))) {
-									System.out.println("멈춰!");
+//									System.out.println("멈춰!");
 									continue Loop;
 								}
-								if(mapClone[crt[0]+(dn[d]*i)][crt[1]+(dm[d]*i)]==3) {
+								if(mapClone[crt[0]+(dn[d]*i)][crt[1]+(dm[d]*i)]==3 && !isVisited[crt[0]+(dn[d]*i)][crt[1]+(dm[d]*i)]) {
 									queue.add(new int[] {crt[0]+(dn[d]*i), crt[1]+(dm[d]*i)});
 									isVisited[crt[0]+(dn[d]*i)][crt[1]+(dm[d]*i)]=true;
-									System.out.println("멈춰!!");
+//									System.out.println("멈춰!!");
 									continue Loop;
 								}
 							}
