@@ -1,7 +1,9 @@
 package BasicStructure;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -37,19 +39,45 @@ public class FloodFill {
 		
 		
 		Queue<int[]> lo = new ArrayDeque<int[]>();
+		int IslandAmt = 0;
+		List<Integer> popul = new ArrayList<>();
+		
 		for(int i=0; i<4; i++) {
 			for(int j =0; j<4; j++) {
-				
-				if(isVisited[i][j]==false && )
-				
-				
-				
-				
+				if(isVisited[i][j]==false && map[i][j]!=0) {
+					lo.add(new int[] {i, j});
+					isVisited[i][j]=true;
+					int LoPopul = map[i][j];
+					IslandAmt++;
+					
+					while(!lo.isEmpty()) {
+						int[] crtLo=lo.poll();
+						for(int k=0; k<4; k++) {
+							if(inRange(map, crtLo[0]+di[k], crtLo[1]+dj[k]) && isVisited[crtLo[0]+di[k]][crtLo[1]+dj[k]]==false && map[crtLo[0]+di[k]][crtLo[1]+dj[k]]!=0) {
+								lo.add(new int[] {crtLo[0]+di[k], crtLo[1]+dj[k]});
+								isVisited[crtLo[0]+di[k]][crtLo[1]+dj[k]]=true;
+								LoPopul+=map[crtLo[0]+di[k]][crtLo[1]+dj[k]];
+							}
+						}
+					}
+					popul.add(LoPopul);
+				}
 			}
 		}
-		
-		
+		System.out.println(IslandAmt);
+		System.out.println(popul);
 
+	}
+	
+
+	
+	public static boolean inRange(int[][] map, int i, int j) {
+		if(i<0) return false;
+		if(i>map.length-1) return false;
+		if(j<0) return false;
+		if(j>map.length-1) return false;
+		
+		return true;
 	}
 
 }

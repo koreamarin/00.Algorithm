@@ -29,6 +29,7 @@ public class BJ_19539_사과나무_류지원 {
             int A=Integer.parseInt(ST.nextToken());
             if(A%2==1) plus1+=1;    // 1을 더해야 하는 횟수 세기
             plus2+=A/2;             // 2를 더해야 하는 횟수 세기
+            System.out.println(plus1 + " " + plus2);
         }
         System.out.println((plus2>=plus1 && (plus2-plus1)%3==0)? "YES" : "NO");   // 나머지가 3의 배수인지 확인하기.
     }

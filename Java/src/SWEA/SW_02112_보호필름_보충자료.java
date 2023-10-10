@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 직접안품. 보충수업자료
  */
-public class SW_02112_보호필름_류지원{
+public class SW_02112_보호필름_보충자료{
 	static int D,W,K,min,inject[],map[][];
 	
 	static boolean check(){
