@@ -12,23 +12,6 @@ import java.util.StringTokenizer;
  * 2. 약품 투입 (조합별로)
  * 3. 조합끝까지 성능검사 통과 못할 시 투입횟수 올리기.
  */
-<<<<<<<< HEAD:Java/src/SWEA/SW_02112_보호필름_보충자료.java
-public class SW_02112_보호필름_보충자료{
-	static int D,W,K,min,inject[],map[][];
-	
-	static boolean check(){
-		int cnt=0;
-		for(int w=0; w<W; w++){
-			cnt=1;
-			for(int d=0; d<D-1; d++){
-				int curr=inject[d  ]==-1? map[d  ][w]:inject[d  ];
-				int next=inject[d+1]==-1? map[d+1][w]:inject[d+1];
-				if(curr==next){
-					cnt++;
-					if(cnt>=K) break;
-				}else{
-					cnt=1;
-========
 
 public class SW_02112_보호필름_류지원 {
 	static int[] numbers;
@@ -55,7 +38,6 @@ public class SW_02112_보호필름_류지원 {
 					if(ST.nextToken().equals("1")) {
 						map[d][w]=true;
 					}
->>>>>>>> f3486a4dc9105098d729e5bba63468225088e542:Java/src/SWEA/SW_02112_보호필름_류지원.java
 				}
 			}
 			

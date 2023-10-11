@@ -3,7 +3,11 @@ package SWEA;
 import java.io.*;
 import java.util.*;
 
-public class D4_04193_수영대회결승전_류지원{
+/**
+ * 보충수업자료
+ */
+
+public class D4_04193_수영대회결승전_보충자료{
 	static int[] di={-1,0,1,0};//상우하좌
 	static int[] dj={0,1,0,-1};
 	static int N, a[][], S[], E[];
