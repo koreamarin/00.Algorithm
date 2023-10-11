@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 직접안품. 보충수업자료
  */
-public class SW_05644_무선충전_류지원{
+public class SW_05644_무선충전_보충자료{
 	static int[] dx={0,0,1,0,-1};//무상우하좌 : 문제 그대로 사용
 	static int[] dy={0,-1,0,1,0};
 	static int M,bcCnt,bc[][],A[],pathA[],B[],pathB[];

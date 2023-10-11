@@ -3,7 +3,7 @@ package SWEA;
 import java.io.*;
 import java.util.*;
 
-public class SW_04008_숫자만들기 {
+public class SW_04008_숫자만들기_보충자료 {
 	static int N,a[],min,max;
 	
 	static void subs(int cnt,int sum,int add,int sub,int mul,int div){
