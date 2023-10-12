@@ -3,7 +3,11 @@ package SWEA;
 import java.io.*;
 import java.util.*;
 
-public class D4_01486_장훈이의높은선반{
+/**
+ *	 보충수업자료
+ */
+
+public class D4_01486_장훈이의높은선반_보충자료{
 	static int N,B,min,H[];
 	
 	static void subs(int cnt,int sum){
