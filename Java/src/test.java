@@ -7,15 +7,16 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class test {
-
+	static int H, W;
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String hexInput = br.readLine();
-        
-		int decimal = Integer.parseInt(hexInput,16);
-        System.out.println("Hex -> Decimal : " + decimal);
-		
-        char[] c = {'C', 'B'};
-		System.out.println(String.valueOf(c));
+		boolean[] A = new boolean[5];
+		H = 5; W = 6;
+		System.out.println(isRange(5, 0));
+	}
+	
+	public static boolean isRange(int i, int j) {
+		if(i<0 || H<=i) return false;
+		if(j<0 || W<=j) return false;
+		return true;
 	}
 }

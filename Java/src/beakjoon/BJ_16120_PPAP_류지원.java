@@ -11,31 +11,17 @@ public class BJ_16120_PPAP_류지원 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		String S  = br.readLine();
+		int BFSize = 0;
+		int AFSize = Integer.MAX_VALUE;
+		while(BFSize!=AFSize) {
+			BFSize = S.length();
+			S = S.replaceAll("PPAP", "P");
+			AFSize = S.length();
+		}
 		
-		String PString = br.readLine();
-		String[] ArrayPString;
-		ArrayPString = PString.split("");
-		
-		System.out.println(Arrays.toString(ArrayPString));
-		
-		ArrayList<String> ListPString = (ArrayList<String>) Arrays.asList(ArrayPString);
-		
-		for(String a: ListPString) { System.out.println(a);}	
-		
-//		ArrayPString.
-		
-		
-		
-		
-		
-		
-		
-		
-//		for(int i=0; i<PString.length(); i++) charList.add(PString.charAt(i));
-		
-//		for(int i=0; i<PString.length()-3; i++) {
-//			System.out.println(charList.get(i).toString());
-//		}
+		if(S.equals("P")) System.out.println("PPAP");
+		else System.out.println("NP");
 	}
 
 }
