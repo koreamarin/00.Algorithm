@@ -22,7 +22,7 @@ import java.util.StringTokenizer;
 public class SW_01767_프로세서연결하기_류지원 {
 	static int N;		// 배열의 크기
 	static int PN;		// 프로세서의 개수
-	static int R;		// 고른 프로레서의 개수
+	static int R;		// 고른 프로세서의 개수
 	static int[] numbers;
 	static int[][] PcLo;	// 프로세서의 위치를 저장할 배열
 	
