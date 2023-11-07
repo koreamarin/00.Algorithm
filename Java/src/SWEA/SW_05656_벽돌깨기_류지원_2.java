@@ -10,8 +10,8 @@ import java.util.StringTokenizer;
 
 /**
  * @author 류지원
- * 시간 : 
- * 메모리 :
+ * 시간 : 1149ms
+ * 메모리 : 93024kb
  * 풀이 방법 :
  * 1. DFS로 완전탐색하면서 공 떨어뜨리기 
  * 2. 파괴될 벽돌을 BFS로 큐에 넣기.
@@ -37,7 +37,6 @@ public class SW_05656_벽돌깨기_류지원_2 {
 			H=Integer.parseInt(ST.nextToken());
 			min=Integer.MAX_VALUE;
 			selected = new int[N];
-			
 			map = new int[H][W];
 			
 			// 배열 입력받기
@@ -47,21 +46,15 @@ public class SW_05656_벽돌깨기_류지원_2 {
 					map[i][j]=Integer.parseInt(ST.nextToken());
 				}
 			}
-			
-			
 			dfs(0);
-			
 			System.out.println("#" + t + " " + min);
-			
 		}
-
 	}
+	
 	// 벽돌 떨어뜨리는 순서를 결정하는 메서드. DFS로 모든 경우를 완전탐색함.
 	public static void dfs(int n) {
 		// 기저조건, 벽돌 떨어뜨리기 실행
 		if(n==N) {
-//			System.out.println();
-//			System.out.println("벽돌 떨어뜨리는 순서 : " + Arrays.toString(selected));
 			DropBoll();
 			return;
 		}
@@ -76,15 +69,13 @@ public class SW_05656_벽돌깨기_류지원_2 {
 		// 맵 배열 복사
 		int[][] map_copy = new int[H][];
 		for(int i=0; i<H; i++) {
-			map_copy[i]=Arrays.copyOf(map[i], H);
+			map_copy[i]=Arrays.copyOf(map[i], W);
 		}
 		
 		// 공 떨어뜨린 위치 (열)
 		for(int n=0; n<N; n++) {
-			loop :
 			for(int ii=0; ii<H; ii++) { /// 공 떨어지는 반복문. (행 sweep)
 				if(map_copy[ii][selected[n]]!=0) {
-//					System.out.println("맞은 벽돌 위치 : (" + ii + " " + selected[n] + ")");
 					// BFS를 돌며 파괴될 벽 위치를 넣기위한 queue
 					Queue<int[]> queue = new ArrayDeque<int[]>();
 					
@@ -93,87 +84,59 @@ public class SW_05656_벽돌깨기_류지원_2 {
 					
 					// 벽돌 파괴할 초기 위치 넣기
 					queue.add(new int[]{ii, selected[n]});
+					isVisited[ii][selected[n]]=true;
 					
 					// 큐가 비어있지 않다면 벽돌 위치 꺼내기
 					while(!queue.isEmpty()) {
 						int[] Lo = queue.poll();
 						int r = Lo[0]; int c = Lo[1];
 						
-//						// 해당 벽돌 방문했다면 pass
-//						if(isVisited[r][c]) continue;
-//						
-//						// 해당 벽돌 방문 안했다면 아래 로직 진행
-//						else if(!isVisited[r][c]) {
-						
-//						System.out.println("진짜뭐임?");
 						// 해당 벽돌의 상 하 좌 우 큐에 넣기. 0이 아니라면 넣기, 방문한곳은 넣지않기.
 						for(int i=1; i<map_copy[r][c]; i++) {
-//							System.out.println("뭐냐");
 							// 상
 							if(isRange(r-i, c)) {	// 배열 안이라면 실행
-//								System.out.println("!");
 								if(map_copy[r-i][c]>0 && !isVisited[r-i][c]) {	// 방문하지 않았고, 0보다 크면 큐에 넣기
-//									System.out.println("넣음상");
 									queue.add(new int[] {r-i, c});
+									isVisited[r-i][c]=true;
 								}
 							}
 							
 							// 하
 							if(isRange(r+i, c)) {	// 배열 안이라면 실행
-//								System.out.println("!");
 								if(map_copy[r+i][c]>0 && !isVisited[r+i][c]) {
-//									System.out.println("넣음하");
 									queue.add(new int[] {r+i, c});
+									isVisited[r+i][c]=true;
 								}
 							}
 							
 							// 좌
 							if(isRange(r, c-i)) {	// 배열 안이라면 실행
-//								System.out.println(r + " " + (c-1));
-//								System.out.println("!");
-								if(map_copy[r][c-i]>0) {
-									if(!isVisited[r][c-i]) {
-//									System.out.println("넣음좌");
-										queue.add(new int[] {r, c-i});
-									}
+								if(map_copy[r][c-i]>0 && !isVisited[r][c-i]) {
+									queue.add(new int[] {r, c-i});
+									isVisited[r][c-i]=true;
 								}
 							}
 							
 							// 우
 							if(isRange(r, c+i)) {	// 배열 안이라면 실행
-//								System.out.println("!");
 								if(map_copy[r][c+i]>0 && !isVisited[r][c+i]) {
-//									System.out.println("넣음우");
 									queue.add(new int[] {r, c+i});
+									isVisited[r][c+i]=true;
 								}
 							}
 						}
-						
-						// 해당 벽돌 파괴 및 방문 체크
+						// 해당 벽돌 파괴
 						map_copy[r][c]=0;
-						isVisited[r][c]=true;
 					}
 					
-
-					
-					
-					
-					// 다 파괴됨. 그러니깐 내려야함.
+					// 공에 의해 연쇄파괴 다 됐다면 공중에 떠있는 블럭 내려야함.
 					map_copy = dropBlock(map_copy);
-					
-					
-					
-					
-					break loop;	// 종료하고 다음 순번의 공 쏘기
+					break;	// 종료하고 다음 순번의 공 쏘기
 				}
 				
 			}
 				
 		}
-		
-//		for(int i=0; i<H; i++) {
-//			System.out.println(Arrays.toString(map_copy[i]));
-//		}
 		
 		// N번만큼 공 다 떨어뜨렸으면 남은 블록갯수 세서 min값 갱신하기.
 		int sum=0;
@@ -189,17 +152,15 @@ public class SW_05656_벽돌깨기_류지원_2 {
 	// 벽돌 아래로 내리는 메서드.
 	public static int[][] dropBlock(int[][] map) {
 		int[][] mapClone = new int[H][W];
-		 
-		 for(int j=0; j<W; j++) {
-			 int ii=H-1;
-			 for(int i=H-1; i>=0; i--) {
+		for(int j=0; j<W; j++) {
+			int ii=H-1;
+			for(int i=H-1; i>=0; i--) {
 				 if(map[i][j]!=0) {
 					 mapClone[ii--][j]=map[i][j];
 				 }
 			 }
-		 }
-		 
-		 return mapClone;
+		}
+		return mapClone;
 	}
 	
 	// 배열 밖으로 나갔는지 안나갔는지 체크하는 메서드.
@@ -210,14 +171,3 @@ public class SW_05656_벽돌깨기_류지원_2 {
 	}
 		
 }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
