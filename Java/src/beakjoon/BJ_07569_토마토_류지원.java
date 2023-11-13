@@ -53,7 +53,7 @@ public class BJ_07569_토마토_류지원 {
 				}
 			}
 		}
-		
+
 		if(all) {
 			System.out.println(0);
 			return;

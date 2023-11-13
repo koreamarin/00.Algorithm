@@ -24,7 +24,7 @@ import java.util.StringTokenizer;
 // 6번 하,좌		pipe6 = {1, 2, 5, 5}
 // 7번 상,좌		pipe7 = {0, 2, 5, 5}
 
-public class SW_01963_탈주범검거_류지원 {
+public class SW_01953_탈주범검거_류지원 {
 	static int N, M;
 
 	public static void main(String[] args) throws IOException {
