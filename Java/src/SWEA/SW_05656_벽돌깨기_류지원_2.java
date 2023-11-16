@@ -74,7 +74,7 @@ public class SW_05656_벽돌깨기_류지원_2 {
 		
 		// 공 떨어뜨린 위치 (열)
 		for(int n=0; n<N; n++) {
-			for(int ii=0; ii<H; ii++) { /// 공 떨어지는 반복문. (행 sweep)
+			for(int ii=0; ii<H; ii++) { // 공 떨어지는 반복문. (행 sweep)
 				if(map_copy[ii][selected[n]]!=0) {
 					// BFS를 돌며 파괴될 벽 위치를 넣기위한 queue
 					Queue<int[]> queue = new ArrayDeque<int[]>();

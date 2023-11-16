@@ -33,7 +33,7 @@ public class SW_01767_프로세서연결하기_보충자료 {
 		StringBuilder sb = new StringBuilder();
 		int TC = Integer.parseInt(br.readLine());
 		for (int testCase = 1; testCase <= TC; testCase++) { // 테스트케이스 50개
-			N = Integer.parseInt(br.readLine()); // 7 ≤ N ≤ 12
+			N = Integer.parseInt(br.readLine()); // 7 ≤ N ≤ 12	 배열의 크기
 			m = new int[N][N];	
 			int outLineCoreCnt = 0;				// 외곽에 붙어있는 코어의 개수
 			coreList = new ArrayList<Point>(); 	// 전원이 연결되지 않은 코어의 좌표
@@ -111,27 +111,4 @@ public class SW_01767_프로세서연결하기_보충자료 {
 		}
 	}
 } // end of class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
