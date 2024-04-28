@@ -3,7 +3,6 @@ package beakjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
@@ -13,7 +12,7 @@ import java.util.StringTokenizer;
  * 풀이방법 :
  * 분할 정복을 사용하였다.
  * 다만, 배열을 사용하면 메모리초과, 브루트포스를 하면 시간초과가 걸리므로
- * 아래적힌바와 같이 조건에 따라 conting을 해야한다.
+ * 아래적힌바와 같이 배열을 사용하지않고 분할정복을 해나가며 풀이했다.
  * 가야하는 쪽이 1,2,3,4사분면 중에 어디인지를 판단 후, count를 한번에 더하는 방식을 사용하였다.
  */
 
