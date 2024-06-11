@@ -20,7 +20,7 @@ import java.util.StringTokenizer;
  */
 
 
-public class BJ_02630_색종이만들기 {
+public class BJ_02630_색종이만들기_류지원 {
     static int[][] arr; static int Bcnt=0, Wcnt=0, N;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
