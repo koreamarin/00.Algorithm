@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * 풀이방법 : dfs를 이용하였다.
  * 
  */
-public class BJ_03109_빵집_류지원 {
+public class BJ_03109_빵집_류지원1 {
 	static int[] pipeNums, di= {-1, 0, 1};
 	static int pipeAmount, R, C, cnt=0;
 	static boolean[][] map; 
