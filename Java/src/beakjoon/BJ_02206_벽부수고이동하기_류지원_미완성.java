@@ -4,10 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class BJ_02206_벽부수고이동하기 {
+public class BJ_02206_벽부수고이동하기_류지원_미완성 {
 	static boolean[][] isVisited;
 	static int[] dr = {-1, 1, 0, 0};
 	static int[] dc = {0, 0, -1, 1};
@@ -21,6 +23,7 @@ public class BJ_02206_벽부수고이동하기 {
 		M = Integer.parseInt(ST.nextToken());
 		
 		boolean[][] map = new boolean[N][M];
+		List<int[]> wall = new ArrayList<int[]>();
 		
 		int min=Integer.MAX_VALUE;
 		
@@ -28,23 +31,27 @@ public class BJ_02206_벽부수고이동하기 {
 			String s = br.readLine();
 			
 			for(int m=0; m<M; m++) {
-				map[n][m] = s.charAt(m)-'0'==0 ? false : true; // false는 길, true는 벽
+				if(s.charAt(m)-'0'==0) {
+					map[n][m]=false;
+				}
+				else {	// 벽이면 true
+					map[n][m]=true;
+					wall.add(new int[] {n, m});
+				}
 			}
 		}
-		
-		boolean[][] copyMap;
-		
-		for(int r=0; r<N; r++) {
-			for(int c=0; c<M; c++) {
+		int wallSize = wall.size();
+		for(int a=0; a<wallSize; a++) {
 				// 벽 부수고, BFS로 N,M까지 최단거리 찾고, 벽 복구하는 과정을 iter
-				if(!map[r][c]) continue;	// 참조하는 곳이 길(false)이면 다음 순환 시도
+				int wr = wall.get(a)[0];
+				int wc = wall.get(a)[1];
 				int validCount = 0;
 				for(int d=0; d<4; d++) {
-					int nr = r+dr[d], nc = c+dc[d];
+					int nr = wr+dr[d], nc = wc+dc[d];
 					if(isRange(nr, nc) && !map[nr][nc]) validCount++;
 				}
 				if(validCount<2) continue; 
-				map[r][c]=false;	// 벽 부셔서 길로 만듦. 벽 부시는 조건은 벽의 상하좌우 2군데 이상이 길이어야 함.
+				map[wr][wc]=false;	// 벽 부셔서 길로 만듦. 벽 부시는 조건은 벽의 상하좌우 2군데 이상이 길이어야 함.
 				isVisited = new boolean[N][M];	// 방문 초기화
 				// 코딩 시작
 				Queue<int[]> q = new ArrayDeque<int[]>();
@@ -98,8 +105,7 @@ public class BJ_02206_벽부수고이동하기 {
 				
 				if(isVisited[N-1][M-1])	min = Math.min(min, count);
 				// 코딩 끝
-				map[r][c]=true;	// 다시 벽으로 만듦.
-			}
+				map[wr][wc]=true;	// 다시 벽으로 만듦.
 		}
 		System.out.println(min==Integer.MAX_VALUE ? -1 : min);
 
