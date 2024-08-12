@@ -1,21 +1,75 @@
 package beakjoon;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.io.*;
+import java.util.*;
 
 public class test {
+    
+    private static class Node implements Comparable<Node>{
+        int from;
+        int to;
+        int weight;
+        public Node (int from, int to, int weight) {
+            this.from = from;
+            this.to = to;
+            this.weight = weight;
+        }
+        
+        @Override
+        public int compareTo (Node node) {
+            return this.weight - node.weight;
+        }
+    }
+    
+    
+    static int V, E, parent[];
+    
+    
+    public static void main (String[] args) throws IOException {
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        String[] input = br.readLine().split(" ");
+        V = Integer.parseInt(input[0]+1);
+        E = Integer.parseInt(input[1]);
+        
+        parent = new int[V+1];
+        Node[] costs = new Node[E];
+        
+        for (int i=1; i<=V; i++) parent[i] = i;
+        
+        for (int i=0; i<E; i++) {
+            input = br.readLine().split(" ");
+            int from = Integer.parseInt(input[0]);
+            int to = Integer.parseInt(input[1]);
+            int weight = Integer.parseInt(input[2]);
+            costs[i] = new Node(from, to, weight);
+        }
+        
+        Arrays.sort(costs);
+        
+        int result = 0;
+        
+        for (Node node : costs) {
+            
+            int from = node.from;
+            int to = node.to;
+            int weight = node.weight;
+            
+            int fromParent = findParent(from);
+            int toParent = findParent(to);
+            if (fromParent == toParent) continue;
+            result += weight;
 
-
-    public static void main(String[] args) throws IOException {
-    	List<Integer> list = new ArrayList<Integer>();
-    	list.add(1);
-    	list.add( );
-    	
-    	System.out.println(list.toString());
+            parent[toParent] = fromParent;
+        }
+        
+        
+        System.out.println(result);
+        
+        br.close();
+    }
+    static int findParent (int node) {
+        if (parent[node] == node) return node;
+        return findParent(parent[node]);
     }
 }
