@@ -115,4 +115,5 @@ public class BJ_14502_연구소_류지원 {
 			return false;
 		return true;
 	}
+	
 }

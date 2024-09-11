@@ -12,10 +12,10 @@ public class test {
 
 
     public static void main(String[] args) throws IOException {
-    	List<Integer> list = new ArrayList<Integer>();
-    	list.add(1);
-    	list.add( );
-    	
-    	System.out.println(list.toString());
+        String haribo3rd = "HARIBO";
+        String haribo4th = String.valueOf("HARIBO");
+            
+        System.out.println(haribo3rd == haribo4th);
+        System.out.println(haribo3rd.equals(haribo4th));
     }
 }
